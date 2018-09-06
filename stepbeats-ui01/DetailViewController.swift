@@ -82,10 +82,10 @@ class DetailViewController: UIViewController {
     func setupRect(){
         //1 Distance
         if(data0.myDistance > averageData.myDistance){
-            DistanceWidth.constant = screenwidth/2 - 16
+            DistanceWidth.constant = screenwidth/2 - 32
             averageDistanceWidth.constant = DistanceWidth.constant * CGFloat(averageData.myDistance) / CGFloat(data0.myDistance)
         } else{
-            averageDistanceWidth.constant = screenwidth/2 - 16
+            averageDistanceWidth.constant = screenwidth/2 - 32
             DistanceWidth.constant = averageDistanceWidth.constant * CGFloat(data0.myDistance) / CGFloat(averageData.myDistance)
         }
         //2 Duration
@@ -95,10 +95,10 @@ class DetailViewController: UIViewController {
         let time0 = Int(splitedArray0[0])! * 3600 + Int(splitedArray0[1])! * 60 + Int(splitedArray0[2])!
         let time1 = Int(splitedArray1[0])! * 3600 + Int(splitedArray1[1])! * 60 + Int(splitedArray1[2])!
         if(time0 > time1){
-            durationWidth.constant = screenwidth/2 - 16
+            durationWidth.constant = screenwidth/2 - 32
             averageDurationWidth.constant = durationWidth.constant * CGFloat(time1) / CGFloat(time0)
         } else{
-            averageDurationWidth.constant = screenwidth/2 - 16
+            averageDurationWidth.constant = screenwidth/2 - 32
             durationWidth.constant = averageDurationWidth.constant * CGFloat(time0) / CGFloat(time1)
         }
         //3 Pace
@@ -110,26 +110,26 @@ class DetailViewController: UIViewController {
         let pace0 = Int(splitedArray0[0])! * 60 + Int(splitedArray2[0])!
         let pace1 = Int(splitedArray1[0])! * 60 + Int(splitedArray3[0])!
         if(pace0 > pace1){
-            paceWidth.constant = screenwidth/2 - 16
+            paceWidth.constant = screenwidth/2 - 32
             averagePaceWidth.constant = paceWidth.constant * CGFloat(pace1) / CGFloat(pace0)
         } else{
-            averagePaceWidth.constant = screenwidth/2 - 16
+            averagePaceWidth.constant = screenwidth/2 - 32
             paceWidth.constant = averagePaceWidth.constant * CGFloat(pace0) / CGFloat(pace1)
         }
         //4 Heart Rate
         if(data0.myHeartRate > averageData.myHeartRate){
-            heartRateWidth.constant = screenwidth/2 - 16
+            heartRateWidth.constant = screenwidth/2 - 32
             averageHeartRateWidth.constant = heartRateWidth.constant * CGFloat(averageData.myHeartRate) / CGFloat(data0.myHeartRate)
         } else{
-            averageHeartRateWidth.constant = screenwidth/2 - 16
+            averageHeartRateWidth.constant = screenwidth/2 - 32
             heartRateWidth.constant = averageHeartRateWidth.constant * CGFloat(data0.myHeartRate) / CGFloat(averageData.myHeartRate)
         }
         //5 BPM
         if(data0.myBPM > averageData.myBPM){
-            BPMWidth.constant = screenwidth/2 - 16
+            BPMWidth.constant = screenwidth/2 - 32
             averageBPMWidth.constant = BPMWidth.constant * CGFloat(averageData.myBPM) / CGFloat(data0.myBPM)
         } else{
-            averageBPMWidth.constant = screenwidth/2 - 16
+            averageBPMWidth.constant = screenwidth/2 - 32
             BPMWidth.constant = averageBPMWidth.constant * CGFloat(data0.myBPM) / CGFloat(averageData.myBPM)
         }
     }

@@ -13,16 +13,24 @@ class ViewController: UIViewController,UITableViewDataSource,UICollectionViewDat
     // MARK: - Properties 从上到下
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var collectionView: UICollectionView!
-    
+
     
     var datas = [Data]()
     var latestData = [DetailData]()
+    var flowLayout:UICollectionViewFlowLayout!
+    let screenheight = UIScreen.main.bounds.size.height
+    let screenwidth = UIScreen.main.bounds.size.width
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self
         loadSampleDatas()
         loadSampleDetailDatas()
+        //重新布局一下 可以改变cell的宽度 否则适配很有问题
+        flowLayout = UICollectionViewFlowLayout()
+        flowLayout.itemSize = CGSize(width: screenwidth - 30 , height: 256)
+        flowLayout.scrollDirection = .horizontal
+        collectionView.setCollectionViewLayout(flowLayout, animated: true)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -46,6 +54,10 @@ class ViewController: UIViewController,UITableViewDataSource,UICollectionViewDat
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return datas.count
+    }
+    
+    func collectionView(collectionView: UICollectionView!, layout collectionViewLayout: UICollectionViewLayout!, sizeForItemAtIndexPath indexPath: NSIndexPath!) -> CGSize{
+        return CGSize(width:90,height:40)
     }
     
     func collectionView(_ collectionView:UICollectionView, numberOfItemsInSection section: Int)->Int{
