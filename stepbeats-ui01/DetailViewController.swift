@@ -37,6 +37,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var averageHeartRateWidth: NSLayoutConstraint!
     @IBOutlet weak var BPMWidth: NSLayoutConstraint!
     @IBOutlet weak var averageBPMWidth: NSLayoutConstraint!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var containView: UIView!
     
     let screenheight = UIScreen.main.bounds.size.height
     let screenwidth = UIScreen.main.bounds.size.width
@@ -51,6 +53,7 @@ class DetailViewController: UIViewController {
         setupMyLabelData()
         setupAverageLabelData()
         setupRect()
+        setUpButton()
     }
     
     //设置用户值
@@ -133,6 +136,37 @@ class DetailViewController: UIViewController {
             BPMWidth.constant = averageBPMWidth.constant * CGFloat(data0.myBPM) / CGFloat(averageData.myBPM)
         }
     }
+    
+    //设置导航栏按钮  设置颜色   新建右边按钮
+    func setUpButton(){
+        //#selector()
+        //let barButtonItem = UIBarButtonItem(title: "Next", style: UIBarButtonItemStyle.plain, target: self, action:nil)
+        let barButtonItem=UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.action, target: self, action: #selector(screenView))
+        //此处使用的图标UIBarButtonSystemItem是一个系统自带的枚举
+        self.navigationItem.rightBarButtonItem = barButtonItem
+        self.navigationController?.navigationBar.tintColor = UIColor(red: 188/255, green: 188/255, blue: 188/255, alpha: 1)
+    }
+    
+    //导出图片
+    /// 截图
+    @objc func screenView()
+    {
+        //scrollView.frame.size.height
+        //设置截图大小
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: screenwidth,height: containView.frame.size.height), true, 0)
+        containView.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let viewImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        let imageRef = viewImage?.cgImage
+        let sendImage = UIImage.init(cgImage: imageRef!);
+        //NSLog("sendimage = %@", sendImage)
+        //保存图片到照片库 （记得在info.plist添加相册访问权限，否则可能崩溃）
+        UIImageWriteToSavedPhotosAlbum(sendImage, nil, nil, nil);
+        //提示
+        CBToast.showToastAction(message: "保存成功")
+    }
+
+    
     
     //MAKR: Navigation
     @IBAction func cancel(_ sender: UIBarButtonItem) {

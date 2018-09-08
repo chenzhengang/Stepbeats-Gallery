@@ -20,6 +20,7 @@
 		B3A968E6213E4852007F57F4 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A968E5213E4852007F57F4 /* TestViewController.swift */; };
 		B3A968E8213E551A007F57F4 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A968E7213E551A007F57F4 /* CollectionTableViewCell.swift */; };
 		B3A968EA213E5828007F57F4 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A968E9213E5828007F57F4 /* Data.swift */; };
+		B3D4588C2143A5B800F4FB53 /* CBToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D4588B2143A5B800F4FB53 /* CBToast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		B3A968E5213E4852007F57F4 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		B3A968E7213E551A007F57F4 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		B3A968E9213E5828007F57F4 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		B3D4588B2143A5B800F4FB53 /* CBToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBToast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				B3A968E3213E2F80007F57F4 /* DetailViewController.swift */,
 				B3332C86213D2DA500C30C9E /* Main.storyboard */,
 				B32460CC213F88B9008C24F1 /* DetailData.swift */,
+				B3D4588B2143A5B800F4FB53 /* CBToast.swift */,
 				B3A968E9213E5828007F57F4 /* Data.swift */,
 				B3A968E7213E551A007F57F4 /* CollectionTableViewCell.swift */,
 				B3332C89213D2DA700C30C9E /* Assets.xcassets */,
@@ -165,6 +168,7 @@
 				B3A968EA213E5828007F57F4 /* Data.swift in Sources */,
 				B3A968E4213E2F80007F57F4 /* DetailViewController.swift in Sources */,
 				B3332C85213D2DA500C30C9E /* ViewController.swift in Sources */,
+				B3D4588C2143A5B800F4FB53 /* CBToast.swift in Sources */,
 				B32460CD213F88B9008C24F1 /* DetailData.swift in Sources */,
 				B327CCF9213FC5AC0006202F /* LatestCollectionViewCell.swift in Sources */,
 				B3A968E6213E4852007F57F4 /* TestViewController.swift in Sources */,

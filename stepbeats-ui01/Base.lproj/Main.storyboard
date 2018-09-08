@@ -387,6 +387,7 @@
                         <outlet property="averageHeartRateWidth" destination="HNu-BX-vPb" id="HrS-gH-8N2"/>
                         <outlet property="averagePaceLabel" destination="wqV-n2-IQJ" id="oVp-6h-X6k"/>
                         <outlet property="averagePaceWidth" destination="GYx-nU-lah" id="2dv-sP-xzL"/>
+                        <outlet property="containView" destination="Q4b-BY-z8N" id="5yJ-cy-P9v"/>
                         <outlet property="durationWidth" destination="8S1-bv-rp4" id="FbJ-fu-stN"/>
                         <outlet property="heartRateWidth" destination="xXW-pK-aIa" id="4WU-wv-gpe"/>
                         <outlet property="myBPMLabel" destination="1Yz-6J-1l8" id="gzT-L0-UIC"/>
@@ -397,6 +398,7 @@
                         <outlet property="myPaceLabel" destination="tf1-s5-iZJ" id="seS-6t-JCD"/>
                         <outlet property="myRoute" destination="BkQ-rm-aEg" id="VvZ-lY-S8W"/>
                         <outlet property="paceWidth" destination="6fp-dW-vMp" id="Ekw-a3-8wX"/>
+                        <outlet property="scrollView" destination="UBp-vW-V6M" id="Fbv-Th-9rL"/>
                         <outlet property="timeLable" destination="5U4-vW-ZuN" id="MXR-1T-dk9"/>
                     </connections>
                 </viewController>
@@ -707,6 +709,15 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V4Q-3S-9a1">
+                                <rect key="frame" x="0.0" y="31" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="GaO-3p-b1P">
+                                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="action" id="dKg-Ii-Xpv"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xvx-OQ-W9u"/>
@@ -717,7 +728,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="elc-iU-MyP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1670" y="1093"/>
+            <point key="canvasLocation" x="1713" y="1037"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="Bvp-6X-K1o">
@@ -824,11 +835,11 @@
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z98-vX-gmr" userLabel="shadowView">
-                                                                    <rect key="frame" x="15" y="11" width="384" height="136"/>
+                                                                    <rect key="frame" x="15" y="11" width="345" height="136"/>
                                                                     <color key="backgroundColor" red="0.72806986139999996" green="0.9076298398" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Af-C4-4wu">
-                                                                    <rect key="frame" x="15" y="11" width="384" height="136"/>
+                                                                    <rect key="frame" x="15" y="11" width="345" height="136"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="September" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TjX-v7-1a1">
                                                                             <rect key="frame" x="16" y="16" width="110" height="28"/>
