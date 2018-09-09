@@ -19,6 +19,8 @@
 		B3A968E8213E551A007F57F4 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A968E7213E551A007F57F4 /* CollectionTableViewCell.swift */; };
 		B3A968EA213E5828007F57F4 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A968E9213E5828007F57F4 /* Data.swift */; };
 		B3D4588C2143A5B800F4FB53 /* CBToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D4588B2143A5B800F4FB53 /* CBToast.swift */; };
+		B3D458D22145323900F4FB53 /* Gallery.png in Resources */ = {isa = PBXBuildFile; fileRef = B3D458D02145323800F4FB53 /* Gallery.png */; };
+		B3D458D32145323900F4FB53 /* LatestRunning.png in Resources */ = {isa = PBXBuildFile; fileRef = B3D458D12145323800F4FB53 /* LatestRunning.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		B3A968E7213E551A007F57F4 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		B3A968E9213E5828007F57F4 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		B3D4588B2143A5B800F4FB53 /* CBToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBToast.swift; sourceTree = "<group>"; };
+		B3D458D02145323800F4FB53 /* Gallery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gallery.png; sourceTree = "<group>"; };
+		B3D458D12145323800F4FB53 /* LatestRunning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LatestRunning.png; sourceTree = "<group>"; };
 		E782BE4EF34417CC6A6BA141 /* Pods-stepbeats-ui01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stepbeats-ui01.debug.xcconfig"; path = "Pods/Target Support Files/Pods-stepbeats-ui01/Pods-stepbeats-ui01.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +70,7 @@
 			children = (
 				B3332C81213D2DA500C30C9E /* stepbeats-ui01 */,
 				B3332C80213D2DA500C30C9E /* Products */,
+				B3D458CF2145323800F4FB53 /* image */,
 				3031151AC2BD5F5B2C94C75F /* Pods */,
 				D6DA6DCDA006D9332894F874 /* Frameworks */,
 			);
@@ -96,6 +101,15 @@
 				B3332C8E213D2DA700C30C9E /* Info.plist */,
 			);
 			path = "stepbeats-ui01";
+			sourceTree = "<group>";
+		};
+		B3D458CF2145323800F4FB53 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				B3D458D02145323800F4FB53 /* Gallery.png */,
+				B3D458D12145323800F4FB53 /* LatestRunning.png */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 		D6DA6DCDA006D9332894F874 /* Frameworks */ = {
@@ -167,7 +181,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3332C8D213D2DA700C30C9E /* LaunchScreen.storyboard in Resources */,
+				B3D458D32145323900F4FB53 /* LatestRunning.png in Resources */,
 				B3332C8A213D2DA700C30C9E /* Assets.xcassets in Resources */,
+				B3D458D22145323900F4FB53 /* Gallery.png in Resources */,
 				B3332C88213D2DA500C30C9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
