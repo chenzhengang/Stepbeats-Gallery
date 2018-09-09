@@ -14,7 +14,6 @@ class ViewController: UIViewController,UITableViewDataSource,UICollectionViewDat
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var collectionView: UICollectionView!
 
-    
     var datas = [Data]()
     var latestData = [DetailData]()
     var flowLayout:UICollectionViewFlowLayout!
@@ -68,7 +67,7 @@ class ViewController: UIViewController,UITableViewDataSource,UICollectionViewDat
         let data = latestData[indexPath.row]
         cell.distanceLabel.text = String(data.myDistance) + " km"
         cell.typeLabel.text = data.myType
-        cell.chart.image = data.myChart
+        //cell.chart.image = data.myChart
         //处理时间 "2018-06-08-18:05"
         var splitedArray0 = data.mydate.components(separatedBy: "-")
         let year = Int(splitedArray0[0])!
