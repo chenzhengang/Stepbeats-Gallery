@@ -15,7 +15,7 @@
             <objects>
                 <viewController title="Latest Running" id="Fhs-or-Mvf" customClass="DetailViewController" customModule="stepbeats_ui01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t7o-K0-uf5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1100"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1130"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UBp-vW-V6M">
@@ -373,7 +373,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zV2-Mo-bB8"/>
                     </view>
-                    <size key="freeformSize" width="375" height="1100"/>
+                    <size key="freeformSize" width="375" height="1130"/>
                     <connections>
                         <outlet property="BPMWidth" destination="pub-xC-uiG" id="bCB-74-O9a"/>
                         <outlet property="DistanceWidth" destination="BrP-bH-2Fu" id="cB3-YC-ep6"/>
