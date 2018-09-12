@@ -542,7 +542,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="367" height="256"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jo1-qG-u6q" userLabel="ContainView">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jo1-qG-u6q" userLabel="ContainView" customClass="clickView" customModule="stepbeats_ui01" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="367" height="256"/>
                                                                     <subviews>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ATg-xW-v9m">
